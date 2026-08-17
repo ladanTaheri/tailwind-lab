@@ -1,10 +1,31 @@
-@import "tailwindcss";
 
-@theme {
-    --color-surface: #fefefe;
-    --color-surface-secondary: #fcfcfe;
-    --color-gray-custom: #1d2433;
-    --color-green-custom:#005c66;
-}
+    @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+    @theme {
+        --color-surface: #fefefe;
+        --color-surface-secondary: #fcfcfe;
+        --color-gray-custom: #1d2433;
+        --color-green-custom: #005c66;
+        --color-green-light-100: #f8fbf8;
+        --color-green-light-200: #dae8e2;
+        --color-green-light-700: #51a167;
+        --color-green-light-800: #0f7c24;
+    }
+
+    @custom-variant dark (&:where(.dark, .dark *));
+
+    .custom-input {
+        @apply border-2 border-green-light-200 bg-green-light-100 py-2 pr-3 pl-12 mb-1 text-base rounded-md text-neutral-700 md:min-w-sm focus:border-green-light-800 user-invalid:border-red-600 focus:user-invalid:border-red-600 focus:outline-none user-invalid:bg-pink-50;
+    }
+
+    .custom-icon {
+        @apply text-green-light-800 text-base absolute top-3.5 left-4 peer-user-invalid:text-red-600;
+    }
+
+    .custom-label {
+        @apply text-gray-400 text-sm absolute top-3 left-10 px-1.5 transition duration-200 bg-white scale-80 -translate-y-5  peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-5 peer-focus:scale-80 peer-user-invalid:text-red-600 peer-placeholder-shown:bg-green-light-100 peer-focus:bg-white;
+    }
+
+    .custom-error {
+        @apply text-xs text-red-600 pl-2  invisible peer-user-invalid:visible
+    }

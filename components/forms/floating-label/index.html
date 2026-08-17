@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Label</title>
+    <link rel="stylesheet" href="../../../styles/output.css" />
+    <link
+      rel="stylesheet"
+      href="../../../assets/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 p-2 sm:p-10 flex justify-center">
+    <form class="bg-white p-4 font-sans rounded-lg max-w-md">
+      <h1 class="uppercase text-xl pb-4 text-center">
+        join us <span class="text-green-light-700">& enjoy</span>
+      </h1>
+
+      <div class="relative min-h-18 mt-2.5">
+        <input
+          type="text"
+          id="name"
+          placeholder=" "
+          class="peer custom-input"
+          required
+        />
+        <i class="fa fa-user custom-icon"></i>
+        <label class="custom-label" for="name"> Full Name </label>
+        <p class="custom-error">
+          <i class="fa fa-info-circle pr-2"></i>Please enter Full Name.
+        </p>
+      </div>
+      <div class="relative min-h-18 mt-2.5">
+        <input
+          type="email"
+          id="email"
+          placeholder=" "
+          class="peer custom-input"
+          required
+        />
+        <i class="fa fa-envelope custom-icon"></i>
+        <label class="custom-label" for="email"> Email address </label>
+        <p class="custom-error">
+          <i class="fa fa-info-circle pr-2"></i>Please enter a valid email
+          address.
+        </p>
+      </div>
+      <div class="relative min-h-18 mt-2.5">
+        <input
+          type="password"
+          id="password"
+          placeholder=" "
+          class="peer custom-input"
+          required
+        />
+        <i class="fa fa-lock custom-icon"></i>
+        <label class="custom-label" for="password"> Password </label>
+        <p class="custom-error">
+          <i class="fa fa-info-circle pr-2"></i>Please enter Password.
+        </p>
+      </div>
+      <button
+        type="submit"
+        class="uppercase text-white text-center bg-green-light-800 w-full md:min-w-sm p-2 rounded-lg cursor-pointer hover:bg-green-light-700"
+      >
+        join us <i class="fa fa-arrow-right pl-2"></i>
+      </button>
+    </form>
+  </body>
+</html>
