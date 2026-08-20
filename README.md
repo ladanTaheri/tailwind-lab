@@ -40,32 +40,6 @@ Complete landing page implementations built with Tailwind CSS.
 * Online Course Platform Landing Page
 * More coming soon...
 
-## Project Structure
-
-```text
-tailwind-lab/
-├── components/
-│   ├── alerts/
-│   │   └── info-alert/
-│   ├── cards/
-│   │   ├── product-card/
-│   │   └── profile-card/
-│   ├── forms/
-│   │   └── floating-label/
-│   └── navigation/
-│
-├── sections/
-│   └── blog-section/
-│
-├── landing/
-│   └── online-course-platform/
-│
-├── styles/
-├── package.json
-├── README.md
-└── ...
-```
-
 ## Technologies
 
 * HTML5
