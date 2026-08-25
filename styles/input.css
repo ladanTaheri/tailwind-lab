@@ -15,9 +15,11 @@
     --color-violet-custom-200: #a9a7ca;
     --color-violet-custom-300: #f8f8fd;
     --color-violet-custom-400: #6f3dfb;
+    --color-violet-custom-500:#f5f3fd;
     --color-violet-custom-600: #612bf4;
     --color-violet-custom-800: #1e1661;
     --color-violet-custom-900: #1c0e5d;
+    --color-black-violet-custom:#4b446e;
     --font-poppins: "Poppins", sans-serif;
 }
 
@@ -45,4 +47,11 @@
 
 .badge:hover {
     @apply bg-violet-custom-400 text-white -translate-y-0.5 shadow-md;
+}
+
+.link{
+    @apply transition-colors duration-200 ease-in-out;
+}
+.link:hover{
+    @apply underline underline-offset-16 decoration-2 decoration-violet-custom-400 text-violet-custom-600;
 }

@@ -11,59 +11,99 @@
     />
   </head>
   <body>
-    <header class="p-2 lg:p-4 w-full">
-      <section
-        class="bg-[url(../landing-pages/online-course-platform/images/hero-background.png)]  min-h-125 bg-cover rounded-3xl px-2 lg:px-10 flex flex-col items-center lg:flex-row lg:justify-between overflow-hidden"
-      >
-        <div
-          class="pb-1 pt-4 lg:py-20 text-center lg:text-left w-full max-w-md"
-        >
-          <span
-            class="bg-violet-custom-100 text-violet-custom-400 text-xs lg:text-sm py-2 px-3 rounded-2xl"
-          >
-            <i class="fa fa-star"></i> Start Learning, Start Growing</span
-          >
-          <h1
-            class="font-poppins text-violet-custom-900 text-3xl md:text-4xl lg:text-5xl font-semibold py-2.5 xl:py-5"
-          >
-            Build Skills with
-            <span class="text-violet-custom-600">TopLearn</span>
-          </h1>
-          <p class="text-violet-custom-800 pb-5">
-            Discover thousands of online courses and learn new skills from
-            expert instructors around the world.
-          </p>
-          <form class="relative">
-            <input
-              type="text"
-              placeholder="What do you want to learn?"
-              class="mb-4 w-full max-w-md py-3 pl-20 pr-26 bg-white rounded-xl placeholder:text-violet-custom-200 xl:placeholder:text-base placeholder:text-sm shadow-sm shadow-violet-custom-600/15 focus:outline focus:outline-violet-custom-400/40 focus:shadow-md focus:shadow-violet-custom-600/40"
-            />
-            <span
-              class="absolute top-1 left-5 bg-violet-custom-300 rounded-full py-2 px-3 text-violet-custom-400 text-base"
-              ><i class="fa fa-search"></i
-            ></span>
-            <button
-              class="bg-violet-custom-600 text-white px-5 py-2 rounded-lg absolute top-1 right-1 cursor-pointer"
-            >
-              Search
-            </button>
-            <div class="hidden lg:flex flex-wrap">
-              <span class="badge">Web Development</span>
-              <span class="badge">Design</span>
-              <span class="badge">Business</span>
-              <span class="badge">Marketing</span>
-            </div>
-          </form>
-        </div>
-        <div>
+    <header>
+      <nav class="px-4 lg:px-8 pt-2 lg:pt-4 flex items-center justify-between">
+        <div class="flex items-center justify-between gap-8">
           <img
-            src="images/hero-5.png"
-            alt=""
-            class="w-full max-w-md lg:max-w-full h-auto"
+            src="images/logo.png"
+            alt="logo"
+            class="w-36 h-auto cursor-pointer"
           />
+          <ul
+            class="capitalize hidden lg:flex gap-5 text-black-violet-custom text-base font-normal"
+          >
+            <li class="link"><a href="#">courses</a></li>
+            <li class="link"><a href="#">categories</a></li>
+            <li class="link"><a href="#">instructors</a></li>
+            <li class="link"><a href="#">blog</a></li>
+            <li class="link"><a href="#">about us</a></li>
+          </ul>
         </div>
-      </section>
+        <div class="capitalize text-base flex gap-1.5">
+          <button
+            class="bg-violet-custom-500 rounded-full py-3 px-3 hidden md:flex cursor-pointer text-violet-custom-800 hover:text-violet-custom-400"
+          >
+            <i class="fa fa-search"></i>
+          </button>
+          <a
+            href="#"
+            class="px-4 py-2 rounded-lg hidden lg:flex hover:text-violet-custom-400"
+            >log in</a
+          >
+          <a
+            href="#"
+            class="px-4 py-2 bg-violet-custom-600 text-white rounded-lg hidden lg:flex hover:bg-violet-custom-600/90 transition-colors duration-200"
+            >sign up</a
+          >
+          <button class="py-2 px-3 text-black-violet-custom flex lg:hidden">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="p-2 lg:p-4 w-full">
+        <section
+          class="bg-[url(../landing-pages/online-course-platform/images/hero-background.png)] min-h-125 bg-cover rounded-3xl px-2 lg:px-10 flex flex-col items-center lg:flex-row lg:justify-between overflow-hidden 2xl:justify-evenly"
+        >
+          <div
+            class="pb-1 pt-4 lg:py-20 text-center lg:text-left w-full max-w-md"
+          >
+            <span
+              class="bg-violet-custom-100 text-violet-custom-400 text-sm py-2 px-3 rounded-2xl hidden lg:inline-flex items-center justify-center gap-2"
+            >
+              <i class="fa fa-star"></i> Start Learning, Start Growing</span
+            >
+            <h1
+              class="font-poppins text-violet-custom-900 text-3xl md:text-4xl lg:text-5xl font-semibold py-2.5 xl:py-5"
+            >
+              Build Skills with
+              <span class="text-violet-custom-600">TopLearn</span>
+            </h1>
+            <p class="text-violet-custom-800 pb-5">
+              Discover thousands of online courses and learn new skills from
+              expert instructors around the world.
+            </p>
+            <form class="relative">
+              <input
+                type="text"
+                placeholder="What do you want to learn?"
+                class="mb-4 w-full max-w-md py-3 pl-20 pr-26 bg-white rounded-xl placeholder:text-violet-custom-200 xl:placeholder:text-base placeholder:text-sm shadow-sm shadow-violet-custom-600/15 focus:outline focus:outline-violet-custom-400/40 focus:shadow-md focus:shadow-violet-custom-600/40"
+              />
+              <span
+                class="absolute top-1 left-5 bg-violet-custom-300 rounded-full py-2 px-3 text-violet-custom-400 text-base"
+                ><i class="fa fa-search"></i
+              ></span>
+              <button
+                class="bg-violet-custom-600 text-white px-5 py-2 rounded-lg absolute top-1 right-1 cursor-pointer hover:bg-violet-custom-600/90 transition-colors duration-200"
+              >
+                Search
+              </button>
+              <div class="hidden lg:flex flex-wrap">
+                <span class="badge">Web Development</span>
+                <span class="badge">Design</span>
+                <span class="badge">Business</span>
+                <span class="badge">Marketing</span>
+              </div>
+            </form>
+          </div>
+          <div>
+            <img
+              src="images/hero-5.png"
+              alt=""
+              class="w-full max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl h-auto"
+            />
+          </div>
+        </section>
+      </div>
     </header>
   </body>
 </html>
