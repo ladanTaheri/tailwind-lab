@@ -55,3 +55,6 @@
 .link:hover{
     @apply underline underline-offset-16 decoration-2 decoration-violet-custom-400 text-violet-custom-600;
 }
+.btn-primary{
+ @apply px-4 py-2 bg-violet-custom-600 text-white rounded-lg  hover:bg-violet-custom-600/90 transition-colors duration-200 cursor-pointer;
+}
