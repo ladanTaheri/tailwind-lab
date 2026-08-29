@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>online Course Platform</title>
     <link rel="stylesheet" href="../../styles/output.css" />
-    <link
-      rel="stylesheet"
-      href="../../assets/font-awesome/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="../../assets/font-awesome-7/css/all.min.css" />
   </head>
   <body>
     <header>
-      <nav class="px-4 lg:px-8 pt-2 lg:pt-4 flex items-center justify-between">
+      <nav class="container-custom flex items-center justify-between">
         <div class="flex items-center justify-between gap-8">
           <img
             src="images/logo.png"
@@ -40,11 +37,7 @@
             class="px-4 py-2 rounded-lg hidden lg:flex hover:text-violet-custom-400"
             >log in</a
           >
-          <a
-            href="#"
-            class="btn-primary hidden lg:flex"
-            >sign up</a
-          >
+          <a href="#" class="btn-primary hidden lg:flex">sign up</a>
           <button class="py-2 px-3 text-black-violet-custom flex lg:hidden">
             <i class="fa fa-bars"></i>
           </button>
@@ -82,11 +75,7 @@
                 class="absolute top-1 left-5 bg-violet-custom-300 rounded-full py-2 px-3 text-violet-custom-400 text-base"
                 ><i class="fa fa-search"></i
               ></span>
-              <button
-                class="absolute top-1 right-1 btn-primary"
-              >
-                Search
-              </button>
+              <button class="absolute top-1 right-1 btn-primary">Search</button>
               <div class="hidden lg:flex flex-wrap">
                 <span class="badge">Web Development</span>
                 <span class="badge">Design</span>
@@ -105,5 +94,116 @@
         </section>
       </div>
     </header>
+    <main class="container-custom">
+      <section>
+        <div class="flex justify-between items-baseline">
+          <h3 class="section-title">Browse by Category</h3>
+          <a class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex"
+            >view all categories
+            <span><i class="fa-solid fa-chevron-right"></i></span
+          ></a>
+        </div>
+        <div class="flex flex-row flex-wrap gap-3 justify-center lg:gap-4 xl:justify-start  items-center">
+          <article
+            class="category-card bg-violet-50 hover:shadow-violet-200 group"
+          >
+            <span class="category-icon bg-violet-500"
+              ><i class="fa-solid fa-code group-hover:scale-105 inline-block"></i
+            ></span>
+            <h5
+              class="category-title text-violet-custom-900 group-hover:text-violet-custom-600"
+            >
+              Development
+            </h5>
+            <p class="text-violet-custom-800 text-xs">120+ Courses</p>
+          </article>
+          <article class="category-card bg-blue-50 hover:shadow-blue-200 group">
+            <span class="category-icon bg-blue-600"
+              ><i class="fa-solid fa-desktop group-hover:scale-105 inline-block"></i
+            ></span>
+            <h5
+              class="category-title text-violet-custom-900 group-hover:text-blue-600"
+            >
+              Design
+            </h5>
+            <p class="text-violet-custom-800 text-xs">80+ Courses</p>
+          </article>
+          <article
+            class="category-card bg-green-50 hover:shadow-green-200 group"
+          >
+            <span class="category-icon bg-green-600"
+              ><i class="fa-solid fa-mobile-screen group-hover:scale-105 inline-block"></i
+            ></span>
+            <h5
+              class="category-title text-violet-custom-900 group-hover:text-green-600"
+            >
+              Mobile
+            </h5>
+            <p class="text-violet-custom-800 text-xs">60+ Courses</p>
+          </article>
+          <article
+            class="category-card bg-orange-50 hover:shadow-orange-200 group"
+          >
+            <span class="category-icon bg-orange-400"
+              ><i class="fa-solid fa-chart-simple group-hover:scale-105 inline-block"></i
+            ></span>
+            <h5
+              class="category-title text-violet-custom-900 group-hover:text-orange-400"
+            >
+              Business
+            </h5>
+            <p class="text-violet-custom-800 text-xs">40+ Courses</p>
+          </article>
+          <article class="category-card bg-rose-50 hover:shadow-rose-200 group">
+            <span class="category-icon bg-rose-400"
+              ><i class="fa-solid fa-bullhorn group-hover:scale-105 inline-block"></i
+            ></span>
+            <h5
+              class="category-title text-violet-custom-900 group-hover:text-rose-400"
+            >
+              Marketing
+            </h5>
+            <p class="text-violet-custom-800 text-xs">90+ Courses</p>
+          </article>
+          <article
+            class="category-card bg-violet-50 hover:shadow-violet-200 group"
+          >
+            <span class="category-icon bg-violet-500"
+              ><i class="fa-solid fa-database group-hover:scale-105 inline-block"></i
+            ></span>
+            <h5
+              class="category-title text-violet-custom-900 group-hover:text-violet-500"
+            >
+              Data Science
+            </h5>
+            <p class="text-violet-custom-800 text-xs">90+ Courses</p>
+          </article>
+          <article
+            class="category-card bg-amber-50 hover:shadow-amber-200 group"
+          >
+            <span class="category-icon bg-amber-400"
+              ><i class="fa-solid fa-palette group-hover:scale-105 inline-block"></i
+            ></span>
+            <h5
+              class="category-title text-violet-custom-900 group-hover:text-amber-400"
+            >
+              Art Design
+            </h5>
+            <p class="text-violet-custom-800 text-xs">30+ Courses</p>
+          </article>
+          <article class="category-card bg-cyan-50 hover:shadow-cyan-200 group">
+            <span class="category-icon bg-cyan-500"
+              ><i class="fa-solid fa-heart group-hover:scale-105 inline-block"></i
+            ></span>
+            <h5
+              class="category-title text-violet-custom-900 group-hover:text-cyan-500"
+            >
+              Personal
+            </h5>
+            <p class="text-violet-custom-800 text-xs">30+ Courses</p>
+          </article>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

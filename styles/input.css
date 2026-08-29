@@ -15,11 +15,11 @@
     --color-violet-custom-200: #a9a7ca;
     --color-violet-custom-300: #f8f8fd;
     --color-violet-custom-400: #6f3dfb;
-    --color-violet-custom-500:#f5f3fd;
+    --color-violet-custom-500: #f5f3fd;
     --color-violet-custom-600: #612bf4;
     --color-violet-custom-800: #1e1661;
     --color-violet-custom-900: #1c0e5d;
-    --color-black-violet-custom:#4b446e;
+    --color-black-violet-custom: #4b446e;
     --font-poppins: "Poppins", sans-serif;
 }
 
@@ -49,12 +49,31 @@
     @apply bg-violet-custom-400 text-white -translate-y-0.5 shadow-md;
 }
 
-.link{
+.link {
     @apply transition-colors duration-200 ease-in-out;
 }
-.link:hover{
+
+.link:hover {
     @apply underline underline-offset-16 decoration-2 decoration-violet-custom-400 text-violet-custom-600;
 }
-.btn-primary{
- @apply px-4 py-2 bg-violet-custom-600 text-white rounded-lg  hover:bg-violet-custom-600/90 transition-colors duration-200 cursor-pointer;
+
+.btn-primary {
+    @apply px-4 py-2 bg-violet-custom-600 text-white rounded-lg hover:bg-violet-custom-600/90 transition-colors duration-200 cursor-pointer;
+}
+
+.container-custom {
+    @apply px-4 lg:px-8 pt-2 lg:pt-4;
+}
+
+.section-title {
+    @apply text-violet-custom-900 font-bold pb-5;
+}
+.category-card{
+    @apply  text-center pt-6 pb-4 px-7 rounded-xl transition-all duration-300 cursor-pointer hover:-translate-y-1  hover:shadow xl:grow 
+}
+.category-icon{
+    @apply text-3xl py-1 px-2 rounded-md text-white ;
+}
+.category-title{
+    @apply capitalize  mt-4 font-semibold text-sm;
 }
