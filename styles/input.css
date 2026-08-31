@@ -49,6 +49,10 @@
     @apply bg-violet-custom-400 text-white -translate-y-0.5 shadow-md;
 }
 
+.badge-course {
+    @apply py-1 px-3 rounded-2xl inline-block cursor-pointer text-xs mr-2 absolute top-3 left-4;
+}
+
 .link {
     @apply transition-colors duration-200 ease-in-out;
 }
@@ -68,12 +72,43 @@
 .section-title {
     @apply text-violet-custom-900 font-bold pb-5;
 }
-.category-card{
-    @apply  text-center pt-6 pb-4 px-7 rounded-xl transition-all duration-300 cursor-pointer hover:-translate-y-1  hover:shadow xl:grow 
+
+.category-card {
+    @apply text-center pt-6 pb-4 px-7 rounded-xl transition-all duration-300 cursor-pointer hover:-translate-y-1 hover:shadow xl:grow
 }
-.category-icon{
-    @apply text-3xl py-1 px-2 rounded-md text-white ;
+
+.category-icon {
+    @apply text-3xl py-1 px-2 rounded-md text-white;
 }
-.category-title{
-    @apply capitalize  mt-4 font-semibold text-sm;
+
+.category-title {
+    @apply capitalize mt-4 font-semibold text-sm;
+}
+
+.card-popular {
+    @apply rounded-bl-2xl rounded-br-2xl shadow-xl  max-w-82 w-70 shadow-violet-50 hover:shadow-2xl hover:shadow-violet-100 relative transition-all duration-300 cursor-pointer hover:-translate-y-1 md:grow;
+}
+
+.card-popular-lesson {
+    @apply h-32 w-full bg-cover bg-top rounded-tl-2xl rounded-tr-2xl flex justify-end items-center pr-5 bg-linear-to-r
+}
+
+.popular-icon {
+    @apply inline-block transition-transform group-hover:scale-105;
+}
+
+.popular-lesson-title {
+    @apply capitalize text-white absolute top-10 left-4 text-2xl leading-7 font-semibold;
+}
+.popular-detail{
+    @apply flex items-baseline justify-between text-violet-custom-800 -mt-5 px-3 text-sm pb-2;
+}
+.teacher-pic{
+    @apply size-10 rounded-full border-2 border-white;
+}
+.course-price{
+    @apply mx-2.5 border-t border-violet-custom-200/30 text-lg text-violet-custom-800 font-bold py-2 pl-3;
+}
+.course-first-price{
+    @apply line-through text-sm text-violet-custom-200 ml-2;
 }
