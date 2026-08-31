@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../styles/output.css" />
     <link rel="stylesheet" href="../../assets/font-awesome-7/css/all.min.css" />
   </head>
-  <body>
+  <body class="container mx-auto p-0 sm:p-2 lg:p-4">
     <header>
       <nav class="container-custom flex items-center justify-between">
         <div class="flex items-center justify-between gap-8">
@@ -17,7 +17,7 @@
             class="w-36 h-auto cursor-pointer"
           />
           <ul
-            class="capitalize hidden lg:flex gap-5 text-black-violet-custom text-base font-normal"
+            class="capitalize hidden lg:flex gap-5 text-black-violet-custom text-base font-semibold"
           >
             <li class="link"><a href="#">courses</a></li>
             <li class="link"><a href="#">categories</a></li>
@@ -26,7 +26,7 @@
             <li class="link"><a href="#">about us</a></li>
           </ul>
         </div>
-        <div class="capitalize text-base flex gap-1.5">
+        <div class="capitalize text-base font-semibold flex gap-1.5">
           <button
             class="bg-violet-custom-500 rounded-full py-3 px-3 hidden md:flex cursor-pointer text-violet-custom-800 hover:text-violet-custom-400"
           >
@@ -51,14 +51,14 @@
             class="pb-1 pt-4 lg:py-20 text-center lg:text-left w-full max-w-md"
           >
             <span
-              class="bg-violet-custom-100 text-violet-custom-400 text-sm py-2 px-3 rounded-2xl hidden lg:inline-flex items-center justify-center gap-2"
+              class="bg-violet-custom-100 text-violet-custom-400 text-sm font-semibold py-2 px-3 rounded-2xl hidden lg:inline-flex items-center justify-center gap-2"
             >
-              <i class="fa fa-star"></i> Start Learning, Start Growing</span
+              ✦ Start Learning, Start Growing</span
             >
             <h1
-              class="font-poppins text-violet-custom-900 text-3xl md:text-4xl lg:text-5xl font-semibold py-2.5 xl:py-5"
+              class="font-poppins text-violet-custom-900 text-3xl md:text-4xl lg:text-5xl font-bold  py-2.5 xl:py-5 leading-10 md:leading-14"
             >
-              Build Skills with
+              Build Skills <br />with
               <span class="text-violet-custom-600">TopLearn</span>
             </h1>
             <p class="text-violet-custom-800 pb-5">
@@ -69,18 +69,19 @@
               <input
                 type="text"
                 placeholder="What do you want to learn?"
-                class="mb-4 w-full max-w-md py-3 pl-20 pr-26 bg-white rounded-xl placeholder:text-violet-custom-200 xl:placeholder:text-base placeholder:text-sm shadow-sm shadow-violet-custom-600/15 focus:outline focus:outline-violet-custom-400/40 focus:shadow-md focus:shadow-violet-custom-600/40"
+                class="mb-4 w-full max-w-md py-3 pl-16 pr-26 bg-white rounded-xl placeholder:text-violet-custom-200 placeholder:text-sm shadow-sm shadow-violet-custom-600/15 focus:outline focus:outline-violet-custom-400/40 focus:shadow-md focus:shadow-violet-custom-600/40"
               />
               <span
-                class="absolute top-1 left-5 bg-violet-custom-300 rounded-full py-2 px-3 text-violet-custom-400 text-base"
+                class="absolute top-1 left-3 bg-violet-custom-300 rounded-full py-2 px-3 text-violet-custom-400 text-base"
                 ><i class="fa fa-search"></i
               ></span>
               <button class="absolute top-1 right-1 btn-primary">Search</button>
-              <div class="hidden lg:flex flex-wrap">
+              <div class="hidden lg:flex flex-wrap gap-2">
                 <span class="badge">Web Development</span>
                 <span class="badge">Design</span>
                 <span class="badge">Business</span>
                 <span class="badge">Marketing</span>
+                <span class="badge"> data sience</span>
               </div>
             </form>
           </div>
@@ -100,7 +101,7 @@
           <h3 class="section-title">Browse by Category</h3>
           <a
             href="#"
-            class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex transition-colors duration-300 hover:text-violet-800 group"
+            class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex transition-colors duration-300 hover:text-violet-800 group font-semibold"
             >View all categories
             <span
               ><i
@@ -109,7 +110,7 @@
           ></a>
         </div>
         <div
-          class="flex flex-row flex-wrap gap-3 justify-center lg:gap-4 xl:justify-start items-center"
+          class="flex flex-row flex-wrap gap-3 justify-center lg:gap-4 xl:justify-start items-center mb-3"
         >
           <article
             class="category-card bg-violet-50 hover:shadow-violet-200 group"
@@ -124,7 +125,7 @@
             >
               Development
             </h5>
-            <p class="text-violet-custom-800 text-xs">120+ Courses</p>
+            <p class="text-violet-custom-800 text-xs">+120 Courses</p>
           </article>
           <article class="category-card bg-blue-50 hover:shadow-blue-200 group">
             <span class="category-icon bg-blue-600"
@@ -229,10 +230,10 @@
       </section>
       <section>
         <div class="flex justify-between items-baseline">
-          <h3 class="section-title pt-7">Popular Courses</h3>
+          <h3 class="section-title">Popular Courses</h3>
           <a
             href="#"
-            class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex transition-colors duration-300 hover:text-violet-800 group"
+            class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex transition-colors duration-300 hover:text-violet-800 group font-semibold"
             >View all popular
             <span
               ><i
@@ -242,13 +243,11 @@
         </div>
 
         <div
-          class="flex flex-col md:flex-row flex-wrap gap-4 justify-center items-center xl:justify-start"
+          class="flex flex-col md:flex-row flex-wrap gap-4 justify-center items-center xl:justify-start mb-3"
         >
           <article class="card-popular group">
-            <div class="card-popular-lesson from-violet-900 to-violet-600">
-              <span class="text-7xl text-white"
-                ><i class="fa-brands fa-react popular-icon"></i
-              ></span>
+            <div class="card-popular-lesson from-violet-700 to-violet-900">
+              <span class="text-7xl popular-icon">⚛️</span>
             </div>
             <span class="badge-course bg-orange-100 text-yellow-900"
               >BestSeller</span
@@ -274,10 +273,8 @@
             </p>
           </article>
           <article class="card-popular group">
-            <div class="card-popular-lesson from-blue-900 to-blue-600">
-              <span class="text-7xl text-white"
-                ><i class="fa-solid fa-swatchbook popular-icon"></i
-              ></span>
+            <div class="card-popular-lesson from-blue-600 to-blue-800">
+              <span class="text-7xl popular-icon">🖥️</span>
             </div>
             <span class="badge-course bg-white text-blue-900">Popular</span>
             <p class="popular-lesson-title">Ui/UX <br />Master Class</p>
@@ -301,12 +298,10 @@
             </p>
           </article>
           <article class="card-popular group">
-            <div class="card-popular-lesson from-orange-600 to-orange-400">
-              <span class="text-7xl text-white"
-                ><i class="fa-brands fa-js-square popular-icon"></i
-              ></span>
+            <div class="card-popular-lesson from-amber-500 to-amber-600">
+              <img src="images/js.png" alt="js" class="popular-icon size-20" />
             </div>
-            <span class="badge-course bg-orange-100 text-yellow-900">New</span>
+            <span class="badge-course bg-orange-50 text-yellow-900">New</span>
             <p class="popular-lesson-title">javascript <br />bootcamp</p>
             <div class="popular-detail">
               <div class="flex items-baseline gap-2">
@@ -328,10 +323,8 @@
             </p>
           </article>
           <article class="card-popular group">
-            <div class="card-popular-lesson from-green-800 to-green-600">
-              <span class="text-7xl text-white"
-                ><i class="fa-brands fa-python popular-icon"></i
-              ></span>
+            <div class="card-popular-lesson from-emerald-600 to-emerald-800">
+              <span class="text-7xl text-white popular-icon">🐍</span>
             </div>
             <span class="badge-course bg-white text-green-900">Trend</span>
             <p class="popular-lesson-title">python for <br />beginers</p>

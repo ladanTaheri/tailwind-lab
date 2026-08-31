@@ -42,7 +42,7 @@
 }
 
 .badge {
-    @apply bg-violet-custom-100 text-violet-custom-400 py-2 px-4 rounded-2xl inline-block shadow-sm shadow-violet-custom-600/15 cursor-pointer text-xs mr-2 transition-colors duration-200;
+    @apply bg-violet-custom-100 text-violet-custom-400 py-2 px-4 rounded-2xl inline-block shadow-sm shadow-violet-custom-600/15 cursor-pointer font-semibold text-xs capitalize  transition-colors duration-200;
 }
 
 .badge:hover {
@@ -62,15 +62,15 @@
 }
 
 .btn-primary {
-    @apply px-4 py-2 bg-violet-custom-600 text-white rounded-lg hover:bg-violet-custom-600/90 transition-colors duration-200 cursor-pointer;
+    @apply px-4 py-2 bg-violet-custom-600 text-white rounded-lg hover:bg-violet-custom-600/90 transition-colors duration-200 cursor-pointer font-semibold;
 }
 
 .container-custom {
-    @apply px-4 lg:px-8 pt-2 lg:pt-4;
+    @apply px-4 lg:px-8;
 }
 
 .section-title {
-    @apply text-violet-custom-900 font-bold pb-5;
+    @apply text-violet-custom-900 font-bold pb-5 text-lg mt-2 lg:mt-5;
 }
 
 .category-card {
@@ -90,7 +90,7 @@
 }
 
 .card-popular-lesson {
-    @apply h-32 w-full bg-cover bg-top rounded-tl-2xl rounded-tr-2xl flex justify-end items-center pr-5 bg-linear-to-r
+    @apply h-32 w-full bg-cover bg-top rounded-tl-2xl rounded-tr-2xl flex justify-end items-center pr-5 bg-linear-120
 }
 
 .popular-icon {
