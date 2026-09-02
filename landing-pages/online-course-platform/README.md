@@ -46,7 +46,7 @@ Desktop and responsive screenshots are available in the `preview` folder.
 
 ## Live Demo
 
-https://ladantaheri.github.io/https://ladantaheri.github.io/tailwind-lab/landing-pages/online-course-platform/
+https://ladantaheri.github.io/tailwind-lab/landing-pages/online-course-platform/
 
 ## Author
 Ladan Taheri
