@@ -70,7 +70,7 @@
 }
 
 .section-title {
-    @apply text-violet-custom-900 font-bold pb-5 text-lg mt-2 lg:mt-5;
+    @apply text-violet-custom-900 font-bold pb-5 text-lg mt-6 lg:mt-8;
 }
 
 .category-card {
@@ -111,4 +111,14 @@
 }
 .course-first-price{
     @apply line-through text-sm text-violet-custom-200 ml-2;
+}
+.card-blog-item{
+    @apply  max-w-md w-70 rounded-bl-2xl rounded-br-2xl shadow-xl  shadow-violet-50 hover:shadow-2xl hover:shadow-violet-100 relative transition-all duration-300 cursor-pointer hover:-translate-y-1 md:grow ;
+}
+
+.card-blog-item-header {
+    @apply h-20 w-full bg-cover bg-top rounded-tl-2xl rounded-tr-2xl flex justify-end items-center pr-5 bg-linear-120
+}
+.badge-date {
+    @apply py-1 px-3 rounded-2xl inline-block cursor-pointer text-xs mr-2 absolute top-6 left-4;
 }
