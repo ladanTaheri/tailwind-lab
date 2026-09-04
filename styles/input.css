@@ -19,6 +19,7 @@
     --color-violet-custom-600: #612bf4;
     --color-violet-custom-800: #1e1661;
     --color-violet-custom-900: #1c0e5d;
+    --color-violet-bg-footer: #f5f5fc;
     --color-black-violet-custom: #4b446e;
     --font-poppins: "Poppins", sans-serif;
 }
@@ -42,7 +43,7 @@
 }
 
 .badge {
-    @apply bg-violet-custom-100 text-violet-custom-400 py-2 px-4 rounded-2xl inline-block shadow-sm shadow-violet-custom-600/15 cursor-pointer font-semibold text-xs capitalize  transition-colors duration-200;
+    @apply bg-violet-custom-100 text-violet-custom-400 py-2 px-4 rounded-2xl inline-block shadow-sm shadow-violet-custom-600/15 cursor-pointer font-semibold text-xs capitalize transition-colors duration-200;
 }
 
 .badge:hover {
@@ -86,7 +87,7 @@
 }
 
 .card-popular {
-    @apply rounded-bl-2xl rounded-br-2xl shadow-xl  max-w-82 w-70 shadow-violet-50 hover:shadow-2xl hover:shadow-violet-100 relative transition-all duration-300 cursor-pointer hover:-translate-y-1 md:grow;
+    @apply rounded-bl-2xl rounded-br-2xl shadow-xl max-w-82 w-70 shadow-violet-50 hover:shadow-2xl hover:shadow-violet-100 relative transition-all duration-300 cursor-pointer hover:-translate-y-1 md:grow;
 }
 
 .card-popular-lesson {
@@ -100,25 +101,47 @@
 .popular-lesson-title {
     @apply capitalize text-white absolute top-10 left-4 text-2xl leading-7 font-semibold;
 }
-.popular-detail{
+
+.popular-detail {
     @apply flex items-baseline justify-between text-violet-custom-800 -mt-5 px-3 text-sm pb-2;
 }
-.teacher-pic{
+
+.teacher-pic {
     @apply size-10 rounded-full border-2 border-white;
 }
-.course-price{
+
+.course-price {
     @apply mx-2.5 border-t border-violet-custom-200/30 text-lg text-violet-custom-800 font-bold py-2 pl-3;
 }
-.course-first-price{
+
+.course-first-price {
     @apply line-through text-sm text-violet-custom-200 ml-2;
 }
-.card-blog-item{
-    @apply  max-w-md w-70 rounded-bl-2xl rounded-br-2xl shadow-xl  shadow-violet-50 hover:shadow-2xl hover:shadow-violet-100 relative transition-all duration-300 cursor-pointer hover:-translate-y-1 md:grow ;
+
+.card-blog-item {
+    @apply max-w-md w-70 rounded-bl-2xl rounded-br-2xl shadow-xl shadow-violet-50 hover:shadow-2xl hover:shadow-violet-100 relative transition-all duration-300 cursor-pointer hover:-translate-y-1 grow;
 }
 
 .card-blog-item-header {
     @apply h-20 w-full bg-cover bg-top rounded-tl-2xl rounded-tr-2xl flex justify-end items-center pr-5 bg-linear-120
 }
+
 .badge-date {
     @apply py-1 px-3 rounded-2xl inline-block cursor-pointer text-xs mr-2 absolute top-6 left-4;
+}
+
+.social-icon {
+    @apply text-sm p-2 bg-violet-400 text-white border border-violet-400 rounded-3xl cursor-pointer transition-colors duration-300 hover:bg-violet-500 hover:border-violet-400 mr-1;
+}
+.footer-link{
+    @apply text-violet-custom-900 capitalize text-sm mt-1 mb-4 hover:text-violet-custom-400 cursor-pointer;
+}
+.footer-menu-header{
+    @apply text-violet-custom-900 font-bold text-base mt-1 mb-2;
+}
+.footer-col{
+   @apply grow  max-w-96;
+}
+.course-input{
+    @apply mb-4 w-full max-w-md py-3 bg-white rounded-xl placeholder:text-violet-custom-200 placeholder:text-sm shadow-sm shadow-violet-custom-600/15 focus:outline focus:outline-violet-custom-400/40 focus:shadow-md focus:shadow-violet-custom-600/40;
 }

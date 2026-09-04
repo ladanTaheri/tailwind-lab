@@ -7,704 +7,808 @@
     <link rel="stylesheet" href="../../styles/output.css" />
     <link rel="stylesheet" href="../../assets/font-awesome-7/css/all.min.css" />
   </head>
-  <body class="container mx-auto p-0 sm:p-2 lg:p-4">
-    <header>
-      <nav class="container-custom flex items-center justify-between">
-        <div class="flex items-center justify-between gap-8">
-          <img
-            src="images/logo.png"
-            alt="TOP Learn"
-            class="w-36 h-auto cursor-pointer"
-          />
-          <ul
-            class="capitalize hidden lg:flex gap-5 text-black-violet-custom text-base font-semibold"
+  <body>
+    <div class="container mx-auto p-0 sm:p-2 lg:p-4">
+      <header>
+        <nav class="container-custom flex items-center justify-between">
+          <div class="flex items-center justify-between gap-8">
+            <img
+              src="images/logo.png"
+              alt="TOP Learn"
+              class="w-36 h-auto cursor-pointer"
+            />
+            <ul
+              class="capitalize hidden lg:flex gap-5 text-black-violet-custom text-base font-semibold"
+            >
+              <li class="link"><a href="#">courses</a></li>
+              <li class="link"><a href="#">categories</a></li>
+              <li class="link"><a href="#">instructors</a></li>
+              <li class="link"><a href="#">blog</a></li>
+              <li class="link"><a href="#">about us</a></li>
+            </ul>
+          </div>
+          <div class="capitalize text-base font-semibold flex gap-1.5">
+            <button
+              class="bg-violet-custom-500 rounded-full py-3 px-3 hidden md:flex cursor-pointer text-violet-custom-800 hover:text-violet-custom-400"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+            <a
+              href="#"
+              class="px-4 py-2 rounded-lg hidden lg:flex hover:text-violet-custom-400"
+              >log in</a
+            >
+            <a href="#" class="btn-primary hidden lg:flex">sign up</a>
+            <button class="py-2 px-3 text-black-violet-custom flex lg:hidden">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+        <div class="p-2 lg:p-4 w-full">
+          <section
+            class="bg-[url(../landing-pages/online-course-platform/images/hero-background.png)] min-h-125 bg-cover rounded-3xl px-2 lg:px-10 flex flex-col items-center lg:flex-row lg:justify-between overflow-hidden 2xl:justify-evenly"
           >
-            <li class="link"><a href="#">courses</a></li>
-            <li class="link"><a href="#">categories</a></li>
-            <li class="link"><a href="#">instructors</a></li>
-            <li class="link"><a href="#">blog</a></li>
-            <li class="link"><a href="#">about us</a></li>
-          </ul>
+            <div
+              class="pb-1 pt-4 lg:py-20 text-center lg:text-left w-full max-w-md"
+            >
+              <span
+                class="bg-violet-custom-100 text-violet-custom-400 text-sm font-semibold py-2 px-3 rounded-2xl hidden lg:inline-flex items-center justify-center gap-2"
+              >
+                ✦ Start Learning, Start Growing</span
+              >
+              <h1
+                class="font-poppins text-violet-custom-900 text-3xl md:text-4xl lg:text-5xl font-bold py-2.5 xl:py-5 leading-10 md:leading-14"
+              >
+                Build Skills <br />with
+                <span class="text-violet-custom-600">TopLearn</span>
+              </h1>
+              <p class="text-violet-custom-800 pb-5">
+                Discover thousands of online courses and learn new skills from
+                expert instructors around the world.
+              </p>
+              <form class="relative">
+                <input
+                  type="text"
+                  placeholder="What do you want to learn?"
+                  class="course-input pl-16 pr-2"
+                />
+                <span
+                  class="absolute top-1 left-3 bg-violet-custom-300 rounded-full py-2 px-3 text-violet-custom-400 text-base"
+                  ><i class="fa fa-search"></i
+                ></span>
+                <button class="absolute top-1 right-1 btn-primary">
+                  Search
+                </button>
+                <div class="hidden lg:flex flex-wrap gap-2">
+                  <span class="badge">Web Development</span>
+                  <span class="badge">Design</span>
+                  <span class="badge">Business</span>
+                  <span class="badge">Marketing</span>
+                  <span class="badge">Data Science</span>
+                </div>
+              </form>
+            </div>
+            <div>
+              <img
+                src="images/hero-5.png"
+                alt=""
+                class="w-full max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl h-auto"
+              />
+            </div>
+          </section>
         </div>
-        <div class="capitalize text-base font-semibold flex gap-1.5">
-          <button
-            class="bg-violet-custom-500 rounded-full py-3 px-3 hidden md:flex cursor-pointer text-violet-custom-800 hover:text-violet-custom-400"
-          >
-            <i class="fa fa-search"></i>
-          </button>
-          <a
-            href="#"
-            class="px-4 py-2 rounded-lg hidden lg:flex hover:text-violet-custom-400"
-            >log in</a
-          >
-          <a href="#" class="btn-primary hidden lg:flex">sign up</a>
-          <button class="py-2 px-3 text-black-violet-custom flex lg:hidden">
-            <i class="fa fa-bars"></i>
-          </button>
-        </div>
-      </nav>
-      <div class="p-2 lg:p-4 w-full">
-        <section
-          class="bg-[url(../landing-pages/online-course-platform/images/hero-background.png)] min-h-125 bg-cover rounded-3xl px-2 lg:px-10 flex flex-col items-center lg:flex-row lg:justify-between overflow-hidden 2xl:justify-evenly"
-        >
+      </header>
+      <main class="container-custom">
+        <section>
+          <div class="flex justify-between items-baseline">
+            <h3 class="section-title">Browse by Category</h3>
+            <a
+              href="#"
+              class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex transition-colors duration-300 hover:text-violet-800 group font-semibold"
+              >View all categories
+              <span
+                ><i
+                  class="fa-solid fa-chevron-right group-hover:translate-x-0.5"
+                ></i></span
+            ></a>
+          </div>
           <div
-            class="pb-1 pt-4 lg:py-20 text-center lg:text-left w-full max-w-md"
+            class="flex flex-row flex-wrap gap-3 justify-center lg:gap-4 xl:justify-start items-center mb-3"
           >
-            <span
-              class="bg-violet-custom-100 text-violet-custom-400 text-sm font-semibold py-2 px-3 rounded-2xl hidden lg:inline-flex items-center justify-center gap-2"
+            <article
+              class="category-card bg-violet-50 hover:shadow-violet-200 group"
             >
-              ✦ Start Learning, Start Growing</span
+              <span class="category-icon bg-violet-500"
+                ><i
+                  class="fa-solid fa-code group-hover:scale-105 inline-block"
+                ></i
+              ></span>
+              <h5
+                class="category-title text-violet-custom-900 group-hover:text-violet-custom-600"
+              >
+                Development
+              </h5>
+              <p class="text-violet-custom-800 text-xs">+120 Courses</p>
+            </article>
+            <article
+              class="category-card bg-blue-50 hover:shadow-blue-200 group"
             >
-            <h1
-              class="font-poppins text-violet-custom-900 text-3xl md:text-4xl lg:text-5xl font-bold py-2.5 xl:py-5 leading-10 md:leading-14"
+              <span class="category-icon bg-blue-600"
+                ><i
+                  class="fa-solid fa-desktop group-hover:scale-105 inline-block"
+                ></i
+              ></span>
+              <h5
+                class="category-title text-violet-custom-900 group-hover:text-blue-600"
+              >
+                Design
+              </h5>
+              <p class="text-violet-custom-800 text-xs">80+ Courses</p>
+            </article>
+            <article
+              class="category-card bg-green-50 hover:shadow-green-200 group"
             >
-              Build Skills <br />with
-              <span class="text-violet-custom-600">TopLearn</span>
-            </h1>
-            <p class="text-violet-custom-800 pb-5">
+              <span class="category-icon bg-green-600"
+                ><i
+                  class="fa-solid fa-mobile-screen group-hover:scale-105 inline-block"
+                ></i
+              ></span>
+              <h5
+                class="category-title text-violet-custom-900 group-hover:text-green-600"
+              >
+                Mobile
+              </h5>
+              <p class="text-violet-custom-800 text-xs">60+ Courses</p>
+            </article>
+            <article
+              class="category-card bg-orange-50 hover:shadow-orange-200 group"
+            >
+              <span class="category-icon bg-orange-400"
+                ><i
+                  class="fa-solid fa-chart-simple group-hover:scale-105 inline-block"
+                ></i
+              ></span>
+              <h5
+                class="category-title text-violet-custom-900 group-hover:text-orange-400"
+              >
+                Business
+              </h5>
+              <p class="text-violet-custom-800 text-xs">40+ Courses</p>
+            </article>
+            <article
+              class="category-card bg-rose-50 hover:shadow-rose-200 group"
+            >
+              <span class="category-icon bg-rose-400"
+                ><i
+                  class="fa-solid fa-bullhorn group-hover:scale-105 inline-block"
+                ></i
+              ></span>
+              <h5
+                class="category-title text-violet-custom-900 group-hover:text-rose-400"
+              >
+                Marketing
+              </h5>
+              <p class="text-violet-custom-800 text-xs">90+ Courses</p>
+            </article>
+            <article
+              class="category-card bg-violet-50 hover:shadow-violet-200 group"
+            >
+              <span class="category-icon bg-violet-500"
+                ><i
+                  class="fa-solid fa-database group-hover:scale-105 inline-block"
+                ></i
+              ></span>
+              <h5
+                class="category-title text-violet-custom-900 group-hover:text-violet-500"
+              >
+                Data Science
+              </h5>
+              <p class="text-violet-custom-800 text-xs">90+ Courses</p>
+            </article>
+            <article
+              class="category-card bg-amber-50 hover:shadow-amber-200 group"
+            >
+              <span class="category-icon bg-amber-400"
+                ><i
+                  class="fa-solid fa-palette group-hover:scale-105 inline-block"
+                ></i
+              ></span>
+              <h5
+                class="category-title text-violet-custom-900 group-hover:text-amber-400"
+              >
+                Art Design
+              </h5>
+              <p class="text-violet-custom-800 text-xs">30+ Courses</p>
+            </article>
+            <article
+              class="category-card bg-cyan-50 hover:shadow-cyan-200 group"
+            >
+              <span class="category-icon bg-cyan-500"
+                ><i
+                  class="fa-solid fa-heart group-hover:scale-105 inline-block"
+                ></i
+              ></span>
+              <h5
+                class="category-title text-violet-custom-900 group-hover:text-cyan-500"
+              >
+                Personal
+              </h5>
+              <p class="text-violet-custom-800 text-xs">30+ Courses</p>
+            </article>
+          </div>
+        </section>
+        <section>
+          <div class="flex justify-between items-baseline">
+            <h3 class="section-title">Popular Courses</h3>
+            <a
+              href="#"
+              class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex transition-colors duration-300 hover:text-violet-800 group font-semibold"
+              >View all popular
+              <span
+                ><i
+                  class="fa-solid fa-chevron-right group-hover:translate-x-0.5"
+                ></i></span
+            ></a>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row flex-wrap gap-4 justify-center items-center xl:justify-start mb-3"
+          >
+            <article class="card-popular group">
+              <div class="card-popular-lesson from-violet-700 to-violet-900">
+                <span class="text-7xl popular-icon">⚛️</span>
+              </div>
+              <span class="badge-course bg-orange-100 text-yellow-900"
+                >BestSeller</span
+              >
+              <p class="popular-lesson-title">Complete <br />React Course</p>
+              <div class="popular-detail">
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="images/teacher-1.jpeg"
+                    alt="john smith"
+                    class="teacher-pic"
+                  />
+                  <p>john smith</p>
+                </div>
+                <p class="text-violet-custom-800/50">
+                  <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.9
+                  (2.1k)
+                </p>
+              </div>
+              <p class="course-price">
+                $49.99
+                <span class="course-first-price">$99.99</span>
+              </p>
+            </article>
+            <article class="card-popular group">
+              <div class="card-popular-lesson from-blue-600 to-blue-800">
+                <span class="text-7xl popular-icon">🖥️</span>
+              </div>
+              <span class="badge-course bg-white text-blue-900">Popular</span>
+              <p class="popular-lesson-title">Ui/UX <br />Master Class</p>
+              <div class="popular-detail">
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="images/teacher-2.jpeg"
+                    alt="sara johnson"
+                    class="teacher-pic"
+                  />
+                  <p>sara johnson</p>
+                </div>
+                <p class="text-violet-custom-800/50">
+                  <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.8
+                  (1.5k)
+                </p>
+              </div>
+              <p class="course-price">
+                $39.99
+                <span class="course-first-price">$79.99</span>
+              </p>
+            </article>
+            <article class="card-popular group">
+              <div class="card-popular-lesson from-amber-500 to-amber-600">
+                <img
+                  src="images/js.png"
+                  alt="js"
+                  class="popular-icon size-20"
+                />
+              </div>
+              <span class="badge-course bg-orange-50 text-yellow-900">New</span>
+              <p class="popular-lesson-title">javascript <br />bootcamp</p>
+              <div class="popular-detail">
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="images/teacher-3.jpeg"
+                    alt="michel brown"
+                    class="teacher-pic"
+                  />
+                  <p>michel brown</p>
+                </div>
+                <p class="text-violet-custom-800/50">
+                  <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.8
+                  (1.8k)
+                </p>
+              </div>
+              <p class="course-price">
+                $44.99
+                <span class="course-first-price">$89.99</span>
+              </p>
+            </article>
+            <article class="card-popular group">
+              <div class="card-popular-lesson from-emerald-600 to-emerald-800">
+                <span class="text-7xl text-white popular-icon">🐍</span>
+              </div>
+              <span class="badge-course bg-white text-green-900">Trend</span>
+              <p class="popular-lesson-title">python for <br />beginners</p>
+              <div class="popular-detail">
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="images/teacher-4.jpeg"
+                    alt="Edvard Davis"
+                    class="teacher-pic"
+                  />
+                  <p>Edvard Davis</p>
+                </div>
+                <p class="text-violet-custom-800/50">
+                  <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.9
+                  (2.3k)
+                </p>
+              </div>
+              <p class="course-price">
+                $34.99
+                <span class="course-first-price">$69.99</span>
+              </p>
+            </article>
+          </div>
+        </section>
+        <section>
+          <div class="flex justify-between items-baseline">
+            <h3 class="section-title">Latest Courses</h3>
+            <a
+              href="#"
+              class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex transition-colors duration-300 hover:text-violet-800 group font-semibold"
+              >View all latest
+              <span
+                ><i
+                  class="fa-solid fa-chevron-right group-hover:translate-x-0.5"
+                ></i></span
+            ></a>
+          </div>
+          <div
+            class="flex flex-col md:flex-row flex-wrap gap-x-4 gap-y-6 justify-center items-center xl:justify-start mb-3"
+          >
+            <article class="card-popular group">
+              <div class="card-popular-lesson from-pink-600 to-pink-800">
+                <span class="text-7xl popular-icon text-white"
+                  ><i class="fa-brands fa-figma"></i
+                ></span>
+              </div>
+              <span class="badge-course bg-white text-pink-900">New</span>
+              <p class="popular-lesson-title">
+                Figma <br />
+                Product Team
+              </p>
+              <div class="popular-detail">
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="images/teacher-12-man.jpeg"
+                    alt="david lee"
+                    class="teacher-pic"
+                  />
+                  <p>david lee</p>
+                </div>
+                <p class="text-violet-custom-800/50">
+                  <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.7
+                  (320)
+                </p>
+              </div>
+              <p class="course-price">
+                $29.99
+                <span class="course-first-price">$59.99</span>
+              </p>
+            </article>
+            <article class="card-popular group">
+              <div class="card-popular-lesson from-rose-400 to-rose-600">
+                <span class="text-6xl text-white"
+                  ><i class="fa-solid fa-database popular-icon"></i
+                ></span>
+              </div>
+              <span class="badge-course bg-white text-cyan-900">New</span>
+              <p class="popular-lesson-title">
+                SQL <br />
+                Data Analysis
+              </p>
+              <div class="popular-detail">
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="images/teacher-5.jpg"
+                    alt="Ryan Chen"
+                    class="teacher-pic"
+                  />
+                  <p>Ryan Chen</p>
+                </div>
+                <p class="text-violet-custom-800/50">
+                  <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.7
+                  (455)
+                </p>
+              </div>
+              <p class="course-price">
+                $32.99
+                <span class="course-first-price">$64.99</span>
+              </p>
+            </article>
+            <article class="card-popular group">
+              <div class="card-popular-lesson from-violet-600 to-violet-800">
+                <span class="text-7xl popular-icon text-white"
+                  ><i class="fa-solid fa-digital-tachograph"></i
+                ></span>
+              </div>
+              <span class="badge-course bg-white text-cyan-900">New</span>
+              <p class="popular-lesson-title">
+                Digital <br />
+                Marketing
+              </p>
+              <div class="popular-detail">
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="images/teacher-6-w.jpeg"
+                    alt="Olivia Turner"
+                    class="teacher-pic"
+                  />
+                  <p>Olivia Turner</p>
+                </div>
+                <p class="text-violet-custom-800/50">
+                  <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.6
+                  (198)
+                </p>
+              </div>
+              <p class="course-price">
+                $34.99
+                <span class="course-first-price">$69.99</span>
+              </p>
+            </article>
+            <article class="card-popular group">
+              <div class="card-popular-lesson from-amber-400 to-amber-600">
+                <span class="text-7xl popular-icon text-white"
+                  ><i class="fa-brands fa-node-js"></i
+                ></span>
+              </div>
+              <span class="badge-course bg-white text-cyan-900">New</span>
+              <p class="popular-lesson-title">
+                Node.js<br />
+                API
+              </p>
+              <div class="popular-detail">
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="images/teacher-7-w.jpeg"
+                    alt="Emily Davis"
+                    class="teacher-pic"
+                  />
+                  <p>Emily Davis</p>
+                </div>
+                <p class="text-violet-custom-800/50">
+                  <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.8
+                  (138)
+                </p>
+              </div>
+              <p class="course-price">
+                $24.99
+                <span class="course-first-price">$49.99</span>
+              </p>
+            </article>
+
+            <article class="card-popular group">
+              <div class="card-popular-lesson from-indigo-400 to-indigo-600">
+                <span class="text-7xl popular-icon text-white"
+                  ><i class="fa-brands fa-php"></i
+                ></span>
+              </div>
+              <span class="badge-course bg-white text-pink-900">New</span>
+              <p class="popular-lesson-title">
+                PHP <br />
+                Programming
+              </p>
+              <div class="popular-detail">
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="images/teacher-7-w.jpeg"
+                    alt="Laurine Rice"
+                    class="teacher-pic"
+                  />
+                  <p>Laurine Rice</p>
+                </div>
+                <p class="text-violet-custom-800/50">
+                  <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 3.7
+                  (120)
+                </p>
+              </div>
+              <p class="course-price">
+                $19.99
+                <span class="course-first-price">$39.99</span>
+              </p>
+            </article>
+
+            <article class="card-popular group">
+              <div class="card-popular-lesson from-pink-400 to-pink-600">
+                <span class="text-7xl popular-icon text-white"
+                  ><i class="fa-solid fa-calculator"></i
+                ></span>
+              </div>
+              <span class="badge-course bg-white text-cyan-900">New</span>
+              <p class="popular-lesson-title">
+                ASP.NET <br />
+                core
+              </p>
+              <div class="popular-detail">
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="images/teacher-10-man.jpeg"
+                    alt="Preston Stracke"
+                    class="teacher-pic"
+                  />
+                  <p>Preston Stracke</p>
+                </div>
+                <p class="text-violet-custom-800/50">
+                  <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 3.7
+                  (345)
+                </p>
+              </div>
+              <p class="course-price">
+                $62.99
+                <span class="course-first-price">$84.99</span>
+              </p>
+            </article>
+
+            <article class="card-popular group">
+              <div class="card-popular-lesson from-teal-400 to-teal-600">
+                <span class="text-7xl popular-icon text-white"
+                  ><i class="fa-brands fa-golang"></i
+                ></span>
+              </div>
+              <span class="badge-course bg-white text-cyan-900">New</span>
+              <p class="popular-lesson-title">
+                Golang <br />
+                Threads
+              </p>
+              <div class="popular-detail">
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="images/teacher-11-man.jpeg"
+                    alt="Darius Stokes"
+                    class="teacher-pic"
+                  />
+                  <p>Darius Stokes</p>
+                </div>
+                <p class="text-violet-custom-800/50">
+                  <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.6
+                  (198)
+                </p>
+              </div>
+              <p class="course-price">
+                $34.99
+                <span class="course-first-price">$69.99</span>
+              </p>
+            </article>
+
+            <article class="card-popular group">
+              <div class="card-popular-lesson from-fuchsia-400 to-fuchsia-700">
+                <span class="text-7xl popular-icon text-white"
+                  ><i class="fa-brands fa-laravel"></i
+                ></span>
+              </div>
+              <span class="badge-course bg-white text-cyan-900">New</span>
+              <p class="popular-lesson-title">
+                Laravel<br />
+                API
+              </p>
+              <div class="popular-detail">
+                <div class="flex items-baseline gap-2">
+                  <img
+                    src="images/teacher-8-w.jpeg"
+                    alt="Melody Mcough"
+                    class="teacher-pic"
+                  />
+                  <p>Melody Mcough</p>
+                </div>
+                <p class="text-violet-custom-800/50">
+                  <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 3.1
+                  (118)
+                </p>
+              </div>
+              <p class="course-price">
+                $54.99
+                <span class="course-first-price">$89.99</span>
+              </p>
+            </article>
+          </div>
+        </section>
+        <section>
+          <div class="flex justify-between items-baseline">
+            <h3 class="section-title">Latest Articles</h3>
+            <a
+              href="#"
+              class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex transition-colors duration-300 hover:text-violet-800 group font-semibold"
+              >View all articles
+              <span
+                ><i
+                  class="fa-solid fa-chevron-right group-hover:translate-x-0.5"
+                ></i></span
+            ></a>
+          </div>
+          <div
+            class="flex flex-col md:flex-row flex-wrap gap-x-4 gap-y-6 items-center mb-3 justify-center md:items-start md:justify-start"
+          >
+            <article class="card-blog-item">
+              <div
+                class="card-blog-item-header from-pink-600 to-pink-800"
+              ></div>
+              <span class="badge-date bg-white text-pink-900"
+                >Aug 24, 2026</span
+              >
+              <div class="text-violet-custom-800 p-5 text-sm">
+                <h3 class="text-violet-custom-900 font-bold text-base">
+                  5 Habits That Make Online Learning Actually Stick
+                </h3>
+                <p
+                  class="text-violet-custom-200 mt-2 border-b border-violet-custom-200/30 pb-3"
+                >
+                  Simple, research-backed routines that help you retain more
+                  from every course you take.
+                </p>
+                <a href="#" class="flex items-center gap-2 pt-3">
+                  <img
+                    src="images/teacher-13-w.jpeg"
+                    alt="Sarah Johnson"
+                    class="teacher-pic"
+                  />
+                  <div>
+                    <p class="text-violet-custom-900 text-sm">Sarah Johnson</p>
+                    <p class="text-violet-custom-200 text-sm">Learning Coach</p>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="card-blog-item">
+              <div
+                class="card-blog-item-header from-blue-600 to-blue-800"
+              ></div>
+              <span class="badge-date bg-white text-blue-900"
+                >Aug 19, 2026</span
+              >
+              <div class="text-violet-custom-800 p-5 text-sm">
+                <h3 class="text-violet-custom-900 font-bold text-base">
+                  Choosing Your First Programming Language in 2026
+                </h3>
+                <p
+                  class="text-violet-custom-200 mt-2 border-b border-violet-custom-200/30 pb-3"
+                >
+                  A practical comparison to help beginners pick a language that
+                  fits their goals.
+                </p>
+                <a href="#" class="flex items-center gap-2 pt-3">
+                  <img
+                    src="images/teacher-15-m.jpeg"
+                    alt="Michael Brown"
+                    class="teacher-pic"
+                  />
+                  <div>
+                    <p class="text-violet-custom-900 text-sm">Michael Brown</p>
+                    <p class="text-violet-custom-200 text-sm">
+                      Senior Instructor
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="card-blog-item">
+              <div
+                class="card-blog-item-header from-emerald-600 to-emerald-800"
+              ></div>
+              <span class="badge-date bg-white text-emerald-900"
+                >Aug 12, 2026</span
+              >
+              <div class="text-violet-custom-800 p-5 text-sm">
+                <h3 class="text-violet-custom-900 font-bold text-base">
+                  From Course to Career: A Student's Roadmap
+                </h3>
+                <p
+                  class="text-violet-custom-200 mt-2 border-b border-violet-custom-200/30 pb-3"
+                >
+                  How to turn what you learn on TopLearn into real opportunities
+                  and a portfolio.
+                </p>
+                <a href="#" class="flex items-center gap-2 pt-3">
+                  <img
+                    src="images/teacher-14-w.jpeg"
+                    alt="liza more"
+                    class="teacher-pic"
+                  />
+                  <div>
+                    <p class="text-violet-custom-900 text-sm">Liza More</p>
+                    <p class="text-violet-custom-200 text-sm">Career Advisor</p>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="p-2 lg:p-4">
+      <footer
+        class="min-h-70 bg-linear-to-b from-violet-50 to-violet-100 rounded-tl-3xl rounded-tr-3xl mt-20"
+      >
+        <section
+          class="container mx-auto p-4 lg:p-8 flex flex-col md:flex-row md:flex-wrap gap-6"
+        >
+          <div class="footer-col pr-0 md:pr-6">
+            <img src="images/logo.png" alt="topLearn" class="w-32 mb-3" />
+            <p class="text-violet-custom-800 text-sm mb-6">
               Discover thousands of online courses and learn new skills from
               expert instructors around the world.
             </p>
+            <div>
+              <span class="social-icon group"
+                ><i class="fa-brands fa-facebook-f group-hover:scale-110"></i
+              ></span>
+              <span class="social-icon group"
+                ><i class="fa-brands fa-twitter group-hover:scale-110"></i
+              ></span>
+              <span class="social-icon group"
+                ><i class="fa-brands fa-instagram group-hover:scale-110"></i
+              ></span>
+              <span class="social-icon group"
+                ><i class="fa-brands fa-linkedin-in group-hover:scale-110"></i
+              ></span>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-menu-header">Quick Links</h5>
+            <ul>
+              <li><a href="#" class="footer-link">Courses</a></li>
+              <li><a href="#" class="footer-link">Instructors</a></li>
+              <li><a href="#" class="footer-link">Blog</a></li>
+              <li><a href="#" class="footer-link">About Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-menu-header">Support</h5>
+            <ul>
+              <li><a href="#" class="footer-link">Help Center</a></li>
+              <li><a href="#" class="footer-link">Contact Us</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-menu-header">Categories</h5>
+            <ul>
+              <li><a href="#" class="footer-link">Development</a></li>
+              <li><a href="#" class="footer-link">Design</a></li>
+              <li><a href="#" class="footer-link">Business</a></li>
+              <li><a href="#" class="footer-link">Marketing</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-menu-header">Newsletter</h5>
+            <p class="text-violet-custom-800 text-sm mb-6">
+              Get the latest courses and articles <br />delivered to your inbox.
+            </p>
             <form class="relative">
               <input
-                type="text"
-                placeholder="What do you want to learn?"
-                class="mb-4 w-full max-w-md py-3 pl-16 pr-26 bg-white rounded-xl placeholder:text-violet-custom-200 placeholder:text-sm shadow-sm shadow-violet-custom-600/15 focus:outline focus:outline-violet-custom-400/40 focus:shadow-md focus:shadow-violet-custom-600/40"
+                type="email"
+                required
+                placeholder="Your Email"
+                class="course-input pl-3 pr-10 "
               />
-              <span
-                class="absolute top-1 left-3 bg-violet-custom-300 rounded-full py-2 px-3 text-violet-custom-400 text-base"
-                ><i class="fa fa-search"></i
-              ></span>
-              <button class="absolute top-1 right-1 btn-primary">Search</button>
-              <div class="hidden lg:flex flex-wrap gap-2">
-                <span class="badge">Web Development</span>
-                <span class="badge">Design</span>
-                <span class="badge">Business</span>
-                <span class="badge">Marketing</span>
-                <span class="badge">Data Science</span>
-              </div>
+              
+              <button class="absolute top-1 right-1 btn-primary"><i class="fa-regular fa-paper-plane"></i></button>
             </form>
           </div>
-          <div>
-            <img
-              src="images/hero-5.png"
-              alt=""
-              class="w-full max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl h-auto"
-            />
-          </div>
         </section>
-      </div>
-    </header>
-    <main class="container-custom">
-      <section>
-        <div class="flex justify-between items-baseline">
-          <h3 class="section-title">Browse by Category</h3>
-          <a
-            href="#"
-            class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex transition-colors duration-300 hover:text-violet-800 group font-semibold"
-            >View all categories
-            <span
-              ><i
-                class="fa-solid fa-chevron-right group-hover:translate-x-0.5"
-              ></i></span
-          ></a>
-        </div>
-        <div
-          class="flex flex-row flex-wrap gap-3 justify-center lg:gap-4 xl:justify-start items-center mb-3"
-        >
-          <article
-            class="category-card bg-violet-50 hover:shadow-violet-200 group"
-          >
-            <span class="category-icon bg-violet-500"
-              ><i
-                class="fa-solid fa-code group-hover:scale-105 inline-block"
-              ></i
-            ></span>
-            <h5
-              class="category-title text-violet-custom-900 group-hover:text-violet-custom-600"
-            >
-              Development
-            </h5>
-            <p class="text-violet-custom-800 text-xs">+120 Courses</p>
-          </article>
-          <article class="category-card bg-blue-50 hover:shadow-blue-200 group">
-            <span class="category-icon bg-blue-600"
-              ><i
-                class="fa-solid fa-desktop group-hover:scale-105 inline-block"
-              ></i
-            ></span>
-            <h5
-              class="category-title text-violet-custom-900 group-hover:text-blue-600"
-            >
-              Design
-            </h5>
-            <p class="text-violet-custom-800 text-xs">80+ Courses</p>
-          </article>
-          <article
-            class="category-card bg-green-50 hover:shadow-green-200 group"
-          >
-            <span class="category-icon bg-green-600"
-              ><i
-                class="fa-solid fa-mobile-screen group-hover:scale-105 inline-block"
-              ></i
-            ></span>
-            <h5
-              class="category-title text-violet-custom-900 group-hover:text-green-600"
-            >
-              Mobile
-            </h5>
-            <p class="text-violet-custom-800 text-xs">60+ Courses</p>
-          </article>
-          <article
-            class="category-card bg-orange-50 hover:shadow-orange-200 group"
-          >
-            <span class="category-icon bg-orange-400"
-              ><i
-                class="fa-solid fa-chart-simple group-hover:scale-105 inline-block"
-              ></i
-            ></span>
-            <h5
-              class="category-title text-violet-custom-900 group-hover:text-orange-400"
-            >
-              Business
-            </h5>
-            <p class="text-violet-custom-800 text-xs">40+ Courses</p>
-          </article>
-          <article class="category-card bg-rose-50 hover:shadow-rose-200 group">
-            <span class="category-icon bg-rose-400"
-              ><i
-                class="fa-solid fa-bullhorn group-hover:scale-105 inline-block"
-              ></i
-            ></span>
-            <h5
-              class="category-title text-violet-custom-900 group-hover:text-rose-400"
-            >
-              Marketing
-            </h5>
-            <p class="text-violet-custom-800 text-xs">90+ Courses</p>
-          </article>
-          <article
-            class="category-card bg-violet-50 hover:shadow-violet-200 group"
-          >
-            <span class="category-icon bg-violet-500"
-              ><i
-                class="fa-solid fa-database group-hover:scale-105 inline-block"
-              ></i
-            ></span>
-            <h5
-              class="category-title text-violet-custom-900 group-hover:text-violet-500"
-            >
-              Data Science
-            </h5>
-            <p class="text-violet-custom-800 text-xs">90+ Courses</p>
-          </article>
-          <article
-            class="category-card bg-amber-50 hover:shadow-amber-200 group"
-          >
-            <span class="category-icon bg-amber-400"
-              ><i
-                class="fa-solid fa-palette group-hover:scale-105 inline-block"
-              ></i
-            ></span>
-            <h5
-              class="category-title text-violet-custom-900 group-hover:text-amber-400"
-            >
-              Art Design
-            </h5>
-            <p class="text-violet-custom-800 text-xs">30+ Courses</p>
-          </article>
-          <article class="category-card bg-cyan-50 hover:shadow-cyan-200 group">
-            <span class="category-icon bg-cyan-500"
-              ><i
-                class="fa-solid fa-heart group-hover:scale-105 inline-block"
-              ></i
-            ></span>
-            <h5
-              class="category-title text-violet-custom-900 group-hover:text-cyan-500"
-            >
-              Personal
-            </h5>
-            <p class="text-violet-custom-800 text-xs">30+ Courses</p>
-          </article>
-        </div>
-      </section>
-      <section>
-        <div class="flex justify-between items-baseline">
-          <h3 class="section-title">Popular Courses</h3>
-          <a
-            href="#"
-            class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex transition-colors duration-300 hover:text-violet-800 group font-semibold"
-            >View all popular
-            <span
-              ><i
-                class="fa-solid fa-chevron-right group-hover:translate-x-0.5"
-              ></i></span
-          ></a>
-        </div>
-
-        <div
-          class="flex flex-col md:flex-row flex-wrap gap-4 justify-center items-center xl:justify-start mb-3"
-        >
-          <article class="card-popular group">
-            <div class="card-popular-lesson from-violet-700 to-violet-900">
-              <span class="text-7xl popular-icon">⚛️</span>
-            </div>
-            <span class="badge-course bg-orange-100 text-yellow-900"
-              >BestSeller</span
-            >
-            <p class="popular-lesson-title">Complete <br />React Course</p>
-            <div class="popular-detail">
-              <div class="flex items-baseline gap-2">
-                <img
-                  src="images/teacher-1.jpeg"
-                  alt="john smith"
-                  class="teacher-pic"
-                />
-                <p>john smith</p>
-              </div>
-              <p class="text-violet-custom-800/50">
-                <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.9
-                (2.1k)
-              </p>
-            </div>
-            <p class="course-price">
-              $49.99
-              <span class="course-first-price">$99.99</span>
-            </p>
-          </article>
-          <article class="card-popular group">
-            <div class="card-popular-lesson from-blue-600 to-blue-800">
-              <span class="text-7xl popular-icon">🖥️</span>
-            </div>
-            <span class="badge-course bg-white text-blue-900">Popular</span>
-            <p class="popular-lesson-title">Ui/UX <br />Master Class</p>
-            <div class="popular-detail">
-              <div class="flex items-baseline gap-2">
-                <img
-                  src="images/teacher-2.jpeg"
-                  alt="sara johnson"
-                  class="teacher-pic"
-                />
-                <p>sara johnson</p>
-              </div>
-              <p class="text-violet-custom-800/50">
-                <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.8
-                (1.5k)
-              </p>
-            </div>
-            <p class="course-price">
-              $39.99
-              <span class="course-first-price">$79.99</span>
-            </p>
-          </article>
-          <article class="card-popular group">
-            <div class="card-popular-lesson from-amber-500 to-amber-600">
-              <img src="images/js.png" alt="js" class="popular-icon size-20" />
-            </div>
-            <span class="badge-course bg-orange-50 text-yellow-900">New</span>
-            <p class="popular-lesson-title">javascript <br />bootcamp</p>
-            <div class="popular-detail">
-              <div class="flex items-baseline gap-2">
-                <img
-                  src="images/teacher-3.jpeg"
-                  alt="michel brown"
-                  class="teacher-pic"
-                />
-                <p>michel brown</p>
-              </div>
-              <p class="text-violet-custom-800/50">
-                <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.8
-                (1.8k)
-              </p>
-            </div>
-            <p class="course-price">
-              $44.99
-              <span class="course-first-price">$89.99</span>
-            </p>
-          </article>
-          <article class="card-popular group">
-            <div class="card-popular-lesson from-emerald-600 to-emerald-800">
-              <span class="text-7xl text-white popular-icon">🐍</span>
-            </div>
-            <span class="badge-course bg-white text-green-900">Trend</span>
-            <p class="popular-lesson-title">python for <br />beginners</p>
-            <div class="popular-detail">
-              <div class="flex items-baseline gap-2">
-                <img
-                  src="images/teacher-4.jpeg"
-                  alt="Edvard Davis"
-                  class="teacher-pic"
-                />
-                <p>Edvard Davis</p>
-              </div>
-              <p class="text-violet-custom-800/50">
-                <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.9
-                (2.3k)
-              </p>
-            </div>
-            <p class="course-price">
-              $34.99
-              <span class="course-first-price">$69.99</span>
-            </p>
-          </article>
-        </div>
-      </section>
-      <section>
-        <div class="flex justify-between items-baseline">
-          <h3 class="section-title">Latest Courses</h3>
-          <a
-            href="#"
-            class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex transition-colors duration-300 hover:text-violet-800 group font-semibold"
-            >View all latest
-            <span
-              ><i
-                class="fa-solid fa-chevron-right group-hover:translate-x-0.5"
-              ></i></span
-          ></a>
-        </div>
-        <div
-          class="flex flex-col md:flex-row flex-wrap gap-x-4 gap-y-6 justify-center items-center xl:justify-start mb-3"
-        >
-          <article class="card-popular group">
-            <div class="card-popular-lesson from-pink-600 to-pink-800">
-              <span class="text-7xl popular-icon text-white"
-                ><i class="fa-brands fa-figma"></i
-              ></span>
-            </div>
-            <span class="badge-course bg-white text-pink-900">New</span>
-            <p class="popular-lesson-title">
-              Figma <br />
-              Product Team
-            </p>
-            <div class="popular-detail">
-              <div class="flex items-baseline gap-2">
-                <img
-                  src="images/teacher-12-man.jpeg"
-                  alt="david lee"
-                  class="teacher-pic"
-                />
-                <p>david lee</p>
-              </div>
-              <p class="text-violet-custom-800/50">
-                <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.7 (320)
-              </p>
-            </div>
-            <p class="course-price">
-              $29.99
-              <span class="course-first-price">$59.99</span>
-            </p>
-          </article>
-          <article class="card-popular group">
-            <div class="card-popular-lesson from-rose-400 to-rose-600">
-              <span class="text-6xl text-white"
-                ><i class="fa-solid fa-database popular-icon"></i
-              ></span>
-            </div>
-            <span class="badge-course bg-white text-cyan-900">New</span>
-            <p class="popular-lesson-title">
-              SQL <br />
-              Data Analysis
-            </p>
-            <div class="popular-detail">
-              <div class="flex items-baseline gap-2">
-                <img
-                  src="images/teacher-5.jpg"
-                  alt="Ryan Chen"
-                  class="teacher-pic"
-                />
-                <p>Ryan Chen</p>
-              </div>
-              <p class="text-violet-custom-800/50">
-                <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.7 (455)
-              </p>
-            </div>
-            <p class="course-price">
-              $32.99
-              <span class="course-first-price">$64.99</span>
-            </p>
-          </article>
-          <article class="card-popular group">
-            <div class="card-popular-lesson from-violet-600 to-violet-800">
-              <span class="text-7xl popular-icon text-white"
-                ><i class="fa-solid fa-digital-tachograph"></i
-              ></span>
-            </div>
-            <span class="badge-course bg-white text-cyan-900">New</span>
-            <p class="popular-lesson-title">
-              Digital <br />
-              Marketing
-            </p>
-            <div class="popular-detail">
-              <div class="flex items-baseline gap-2">
-                <img
-                  src="images/teacher-6-w.jpeg"
-                  alt="Olivia Turner"
-                  class="teacher-pic"
-                />
-                <p>Olivia Turner</p>
-              </div>
-              <p class="text-violet-custom-800/50">
-                <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.6 (198)
-              </p>
-            </div>
-            <p class="course-price">
-              $34.99
-              <span class="course-first-price">$69.99</span>
-            </p>
-          </article>
-          <article class="card-popular group">
-            <div class="card-popular-lesson from-amber-400 to-amber-600">
-              <span class="text-7xl popular-icon text-white"
-                ><i class="fa-brands fa-node-js"></i
-              ></span>
-            </div>
-            <span class="badge-course bg-white text-cyan-900">New</span>
-            <p class="popular-lesson-title">
-              Node.js<br />
-              API
-            </p>
-            <div class="popular-detail">
-              <div class="flex items-baseline gap-2">
-                <img
-                  src="images/teacher-7-w.jpeg"
-                  alt="Emily Davis"
-                  class="teacher-pic"
-                />
-                <p>Emily Davis</p>
-              </div>
-              <p class="text-violet-custom-800/50">
-                <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.8 (138)
-              </p>
-            </div>
-            <p class="course-price">
-              $24.99
-              <span class="course-first-price">$49.99</span>
-            </p>
-          </article>
-
-          <article class="card-popular group">
-            <div class="card-popular-lesson from-indigo-400 to-indigo-600">
-              <span class="text-7xl popular-icon text-white"
-                ><i class="fa-brands fa-php"></i
-              ></span>
-            </div>
-            <span class="badge-course bg-white text-pink-900">New</span>
-            <p class="popular-lesson-title">
-              PHP <br />
-              Programming
-            </p>
-            <div class="popular-detail">
-              <div class="flex items-baseline gap-2">
-                <img
-                  src="images/teacher-7-w.jpeg"
-                  alt="Laurine Rice"
-                  class="teacher-pic"
-                />
-                <p>Laurine Rice</p>
-              </div>
-              <p class="text-violet-custom-800/50">
-                <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 3.7 (120)
-              </p>
-            </div>
-            <p class="course-price">
-              $19.99
-              <span class="course-first-price">$39.99</span>
-            </p>
-          </article>
-
-          <article class="card-popular group">
-            <div class="card-popular-lesson from-pink-400 to-pink-600">
-              <span class="text-7xl popular-icon text-white"
-                ><i class="fa-solid fa-calculator"></i
-              ></span>
-            </div>
-            <span class="badge-course bg-white text-cyan-900">New</span>
-            <p class="popular-lesson-title">
-              ASP.NET <br />
-              core
-            </p>
-            <div class="popular-detail">
-              <div class="flex items-baseline gap-2">
-                <img
-                  src="images/teacher-10-man.jpeg"
-                  alt="Preston Stracke"
-                  class="teacher-pic"
-                />
-                <p>Preston Stracke</p>
-              </div>
-              <p class="text-violet-custom-800/50">
-                <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 3.7 (345)
-              </p>
-            </div>
-            <p class="course-price">
-              $62.99
-              <span class="course-first-price">$84.99</span>
-            </p>
-          </article>
-
-          <article class="card-popular group">
-            <div class="card-popular-lesson from-teal-400 to-teal-600">
-              <span class="text-7xl popular-icon text-white"
-                ><i class="fa-brands fa-golang"></i
-              ></span>
-            </div>
-            <span class="badge-course bg-white text-cyan-900">New</span>
-            <p class="popular-lesson-title">
-              Golang <br />
-              Threads
-            </p>
-            <div class="popular-detail">
-              <div class="flex items-baseline gap-2">
-                <img
-                  src="images/teacher-11-man.jpeg"
-                  alt="Darius Stokes"
-                  class="teacher-pic"
-                />
-                <p>Darius Stokes</p>
-              </div>
-              <p class="text-violet-custom-800/50">
-                <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 4.6 (198)
-              </p>
-            </div>
-            <p class="course-price">
-              $34.99
-              <span class="course-first-price">$69.99</span>
-            </p>
-          </article>
-
-          <article class="card-popular group">
-            <div class="card-popular-lesson from-fuchsia-400 to-fuchsia-700">
-              <span class="text-7xl popular-icon text-white"
-                ><i class="fa-brands fa-laravel"></i
-              ></span>
-            </div>
-            <span class="badge-course bg-white text-cyan-900">New</span>
-            <p class="popular-lesson-title">
-              Laravel<br />
-              API
-            </p>
-            <div class="popular-detail">
-              <div class="flex items-baseline gap-2">
-                <img
-                  src="images/teacher-8-w.jpeg"
-                  alt="Melody Mcough"
-                  class="teacher-pic"
-                />
-                <p>Melody Mcough</p>
-              </div>
-              <p class="text-violet-custom-800/50">
-                <i class="fa-solid fa-star text-amber-400 mr-0.5"></i> 3.1 (118)
-              </p>
-            </div>
-            <p class="course-price">
-              $54.99
-              <span class="course-first-price">$89.99</span>
-            </p>
-          </article>
-        </div>
-      </section>
-      <section>
-        <div class="flex justify-between items-baseline">
-          <h3 class="section-title">Latest Articles</h3>
-          <a
-            href="#"
-            class="text-violet-custom-400 text-sm cursor-pointer hidden lg:flex transition-colors duration-300 hover:text-violet-800 group font-semibold"
-            >View all articles
-            <span
-              ><i
-                class="fa-solid fa-chevron-right group-hover:translate-x-0.5"
-              ></i></span
-          ></a>
-        </div>
-        <div
-          class="flex flex-col md:flex-row flex-wrap gap-x-4 gap-y-6 justify-center items-start xl:justify-start mb-3"
-        >
-          <article class="card-blog-item">
-            <div class="card-blog-item-header from-pink-600 to-pink-800"></div>
-            <span class="badge-date bg-white text-pink-900">Aug 24, 2026</span>
-            <div class="text-violet-custom-800 p-5 text-sm">
-              <h3 class="text-violet-custom-900 font-bold text-base">
-                5 Habits That Make Online Learning Actually Stick
-              </h3>
-              <p
-                class="text-violet-custom-200 mt-2 border-b border-violet-custom-200/30 pb-3"
-              >
-                Simple, research-backed routines that help you retain more from
-                every course you take.
-              </p>
-              <a href="#" class="flex items-center gap-2 pt-3">
-                <img
-                  src="images/teacher-13-w.jpeg"
-                  alt="Sarah Johnson"
-                  class="teacher-pic"
-                />
-                <div>
-                  <p class="text-violet-custom-900 text-sm">Sarah Johnson</p>
-                  <p class="text-violet-custom-200 text-sm">Learning Coach</p>
-                </div>
-              </a>
-            </div>
-          </article>
-          <article class="card-blog-item">
-            <div class="card-blog-item-header from-blue-600 to-blue-800"></div>
-            <span class="badge-date bg-white text-blue-900">Aug 19, 2026</span>
-            <div class="text-violet-custom-800 p-5 text-sm">
-              <h3 class="text-violet-custom-900 font-bold text-base">
-                Choosing Your First Programming Language in 2026
-              </h3>
-              <p
-                class="text-violet-custom-200 mt-2 border-b border-violet-custom-200/30 pb-3"
-              >
-                A practical comparison to help beginners pick a language that
-                fits their goals.
-              </p>
-              <a href="#" class="flex items-center gap-2 pt-3">
-                <img
-                  src="images/teacher-15-m.jpeg"
-                  alt="Michael Brown"
-                  class="teacher-pic"
-                />
-                <div>
-                  <p class="text-violet-custom-900 text-sm">Michael Brown</p>
-                  <p class="text-violet-custom-200 text-sm">
-                    Senior Instructor
-                  </p>
-                </div>
-              </a>
-            </div>
-          </article>
-          <article class="card-blog-item">
-            <div
-              class="card-blog-item-header from-emerald-600 to-emerald-800"
-            ></div>
-            <span class="badge-date bg-white text-emerald-900"
-              >Aug 12, 2026</span
-            >
-            <div class="text-violet-custom-800 p-5 text-sm">
-              <h3 class="text-violet-custom-900 font-bold text-base">
-                From Course to Career: A Student's Roadmap
-              </h3>
-              <p
-                class="text-violet-custom-200 mt-2 border-b border-violet-custom-200/30 pb-3"
-              >
-                How to turn what you learn on TopLearn into real opportunities
-                and a portfolio.
-              </p>
-              <a href="#" class="flex items-center gap-2 pt-3">
-                <img
-                  src="images/teacher-14-w.jpeg"
-                  alt="liza more"
-                  class="teacher-pic"
-                />
-                <div>
-                  <p class="text-violet-custom-900 text-sm">Liza More</p>
-                  <p class="text-violet-custom-200 text-sm">Career Advisor</p>
-                </div>
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
+      </footer>
+    </div>
   </body>
 </html>
